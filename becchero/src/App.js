@@ -1,11 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 function App() {
+  const props = {
+    title: 'Becchero Mariano',
+    props:'1'
+  }
+
   return (
     <div className="App">
       <NavBar/>
+      <ItemListContainer {...props}/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,6 +27,7 @@ function App() {
           Learn React
         </a>
       </header>
+      
     </div>
   );
 }

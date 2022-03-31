@@ -1,5 +1,6 @@
 import './NavBar.css'
 import logo from '../../logo.svg'
+import CartWidget from '../CartWidget/CartWidget'
 
 const NavBar = () => {
     return (
@@ -11,6 +12,7 @@ const NavBar = () => {
                 <li><a>Impresoras</a></li>
                 <li><a>Celulares</a></li>
                 <li><a>Login</a></li>
+                <li><CartWidget /></li>
             </ul>
             
         </nav>
