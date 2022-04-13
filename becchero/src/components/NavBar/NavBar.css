@@ -1,22 +1,8 @@
-.NavBar{
+/*.NavBar{
     background-color: grey;
     align-content: center;
     display:inline-flexbox;
 }
-
-/*.button{
-    border-radius: 20px;
-    border-style: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    cursor: pointer;
-}
-
-.button1{
-    border-style: none;
-    background-color: grey;
-    color: white;
-    cursor: pointer;
-}*/
 
 nav{
     height: 60px;
@@ -44,4 +30,74 @@ nav ul li a {
 
 nav ul li a:hover{
   background-color: #929fb3;
-}
+}*/
+
+.NavBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background: grey;
+  }
+  
+  .Categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .Option {
+    /* color: #8C30F5; */
+    text-decoration: none;
+    border-radius: 25;
+    margin: 0 50px;
+    /* TODO */
+    width: auto;
+    padding: 12px;
+    font-size: 8px;
+    background: black;
+    border-radius: 8px;
+    flex: none;
+    display: flex;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .ActiveOption {
+    /* color: #8C30F5; */
+    text-decoration: none;
+    border-radius: 25;
+    margin: 0 50px;
+    /* TODO */
+    width: auto;
+    padding: 12px;
+    font-size: 8px;
+    background: lightseagreen;
+    border-radius: 8px;
+    flex: none;
+    display: flex;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+    outline: inherit;
+  }
+  
+  .NavLink {
+    color : lightseagreen
+  }

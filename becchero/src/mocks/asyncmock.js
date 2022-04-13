@@ -26,18 +26,32 @@ const products = [
     }
 ]
 
-export const getProducts = () => {
+const categories = [
+    {id: 'Celular', description: 'Celular'},
+    {id: 'Tablet', description: 'Tablet'},
+    {id: 'Notebook', description: 'Notebook'}
+]
+
+export const getProducts = (categoryId) => {
     return new Promise (resolve => {
         setTimeout(() => {
-            resolve(products)
-        }, 2000)
+            resolve(categoryId ? products.filter(prod => prod.category === categoryId) : products)
+        }, 500)
     })
 }
 
 export const getProductsById = (id) => {
     return new Promise (resolve => {
         setTimeout(() => {
-            resolve(products.find(prod => prod.id === id))
+            resolve(products.find(prod => prod.id === parseInt(id)))
+        }, 500)
+    })
+}
+
+export const getCategories = () => {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(categories)
         }, 500)
     })
 }
