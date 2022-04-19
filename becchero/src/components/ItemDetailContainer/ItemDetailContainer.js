@@ -35,15 +35,7 @@ const ItemDetailContainer = () => {
                     <h1>El producto no existe</h1> 
             }
         </div>
-    )   
-
-
-    /*return (
-        <div className="ItemDetailContainer" >
-            <ItemDetail  {...product}/>
-        </div>
-    )  */
-    
+    )    
     
 }
 export default ItemDetailContainer
